@@ -1,0 +1,54 @@
+.header{
+    padding: 10px 0px 2px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    font-family: Garamond;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.bodypage {
+    background-color: #000000;
+}
+
+html {
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+
+body {
+    min-width:100%;
+    height:100%;
+}
+
+#tablespace {
+    padding: 10px 350px;
+    text-align: center;
+}
+
+.imgs {
+    width: 100%;
+}
+
+td {
+    width: 160px;
+    height: 160px;
+}
+
+.imgs:hover {
+    opacity: 40%;
+    transition: 0.15s;
+}
+
+#img1 {
+    border-radius-topleft: 20%;
+    -webkit-border-radiustopleft: 100px 0px 0px 0px;
+}
+
+#img4 {
+    border-radius-topright: 20%:
+}

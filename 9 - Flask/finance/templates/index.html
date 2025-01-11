@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    {% set total = 0 %}
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Shares</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for row in transactions %}
+            <tr>
+                {% if row["shares"] != 0 %}
+                    <td>{{ row["symbol"] }}</td>
+                    <td>{{ row["shares"] }}</td>
+                    <td>{{ row["currentprice"] | usd }}</td>
+                    <td>{{ (row["currentprice"]*row["shares"]) | usd }}</td>
+                    {% set total = (row["currentprice"]*row["shares"]) %}
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><b>Cash</b></td>
+                <td><b>{{ cash | usd }}</b></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><b>Total</b></td>
+                <td><b>{{ (cash + total) | usd }}</b></td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

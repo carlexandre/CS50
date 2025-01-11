@@ -1,0 +1,34 @@
+--> HTML TAGS
+
+1. <div>
+2. <footer>
+3. <main>
+4. <header>
+5. <img>
+6. <audio>
+7. <b>
+8. <hX>
+9. <br>
+10. <a>
+
+--> CSS TAGS
+
+1. padding
+2. background-color
+3. transition
+4. width
+5. border-radius
+
+--> JS
+
+-> about me
+. I used JS to when the cursor hover the image play the music from the movie "Easy A" :)
+
+-> index
+. I used JS to change the color of the captions to white when the cursor hover the certain area
+
+-> carlosfm
+. I used JS to some things in this page. The first was to click in the song's cover and the certain song stars, but when we click in another cover, the current song stops and starts the new. Other thing that i made, it was the button to pause and play and it appears after that we click in one of the covers.
+
+-> my archives
+. I used a bootstrap that makes a photos carousel and I put the images into a table.
